@@ -20,8 +20,7 @@ import unittest
 from pylxd import api
 
 TESTDIR = os.path.dirname(os.path.abspath(__file__))
-ROOTDIR = os.path.normpath(os.path.join(TESTDIR, '..', '..', '..'))
-IMAGE = os.path.join(ROOTDIR, 'images', 'lxd.tar.xz')
+IMAGE = os.path.join(TESTDIR, 'images', 'lxd.tar.xz')
 
 class LXDTestHost(unittest.TestCase):
     def setUp(self):
